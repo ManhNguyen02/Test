@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha5121ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>  
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Create Account</title>
 </head>
 <body>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="or">Or</div>
+            <div class="or">-------------------------------------Or------------------------------------</div>
         </div>
 
         <div>
@@ -45,7 +45,7 @@
         </div>
         
         <div>
-            <label for="email">Email</label>
+            <label for="email"></label>
             <i class="fas fa-envelope"></i>
             <input 
                 type="text"
@@ -57,7 +57,6 @@
                 <div class="error"></div>
         </div>
 
-         <!--Password-->
          <div>
             <label for="phone"></label>
             <i class="fas fa-phone"></i>
@@ -72,17 +71,17 @@
         </div>
 
         <div>
-            <label for=""></label>
-
-            <input 
-                type=""
-                name=""
-                id=""
-                />
-                <i class="far fa-check-circle failure-icon"></i>
-                <div class="error"></div>
-        </div>
-
+            <label for="job"></label>
+            <select name="job" id="job-select">
+                <option value="">Select job type</option>
+                <option value="nv">Nhân viên có hợp đồng</option>
+                <option value="cn">Công Nhân</option>
+                <option value="cn-n-l-n">Chăn nuôi nông, lâm, ngư nghiệp</option>
+                <option value="nd">Ngư dân</option>
+                <option value="dev">Developer</option>
+            </select>
+        </div> 
+    
         <div>
             <label for=""></label>
 
@@ -90,6 +89,7 @@
                 type=""
                 name=""
                 id=""
+                placeholder="Repeat password"
                 />
                 <i class="far fa-check-circle failure-icon"></i>
                 <div class="error"></div>
@@ -97,12 +97,13 @@
 
 
         <div>
-            <label for="password">Password</label>
+            <label for="password"></label>
             <i class="fas fa-lock"></i>
             <input 
                 type="password"
                 name="password"
                 id="password"
+                placeholder="Create password"
                 />
                 <i class="far fa-check-circle failure-icon"></i>
                 <div class="error"></div>
